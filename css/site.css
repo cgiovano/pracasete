@@ -1,0 +1,122 @@
+html {
+    font-family: 'sansation', sans-serif;
+}
+
+body {
+    color: #515151;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Serif Text', serif;
+}
+
+.logo {
+    width: 8rem;
+}
+
+header {
+    width: 100%;
+}
+
+/*
+nav {
+    width: 90%;
+    margin: 0px auto;
+}
+
+nav ul li {
+    margin: auto 1rem;
+}
+
+.nav-item a {
+    color: #1e2029;
+    vertical-align: middle;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+    .nav-item a:hover {
+        color: #366fd1;
+        transition: all 0.3s ease-in-out;
+    }
+
+.nav-links {
+    display: inline-flex;
+    flex-grow: 1;
+}
+
+
+header ul {
+    display: inline-flex;
+    list-style: none;
+    justify-content: end;
+    align-items: center;
+}
+*/
+.panel {
+    width: 70%;
+    margin: 2rem auto;
+    align-content: center;
+    background-image: url("../img/abstract.png");
+    background-repeat: no-repeat;
+    background-position-x: 70%;
+    background-size: contain;
+}
+
+.panel div, img {
+    padding: 1rem;
+}
+
+.custom-btn {
+    padding: 0.5rem;
+    border: solid 0.5px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #366fd1;
+}
+
+    .custom-btn:hover {
+        background-color: #366fd1;
+        color: #ffffff;
+        transition: all 0.2s ease-in-out;
+    }
+
+.guitar-img {
+    width: 90%;
+    margin: auto;
+}
+
+.focus {
+    margin-left: 20%;
+    color: #366fd1;
+}
+
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 4rem;
+    background-color: #232323;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul a {
+    color: #515151;
+}
+
+    footer ul li a:hover {
+        color: #9ef77e;
+    }
+
+.copy {
+    position: absolute;
+    margin-top: 2rem;
+}
+
+.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}

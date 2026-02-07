@@ -1,0 +1,251 @@
+﻿
+.text-center {
+    font-family: "DM Serif Text", serif;;
+    color: #366fd1;
+    word-spacing: 1rem;
+    margin-bottom: 3rem;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: rgb(151, 151, 151);
+}
+
+.footer-container a:hover 
+{
+    color: #366fd1;
+}
+
+.section-aulas h3 {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.section-container article {
+    margin-bottom: 2rem;
+}
+
+.foco {
+    border: solid 1px #366fd1;
+}
+
+.foco-texto{
+    background-color: #366fd1;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.tachado {
+    text-decoration-thickness: 2px;
+    text-decoration-line: line-through;
+}
+
+.small-card {
+    font-family: 'sansation', sans-serif;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    border: solid 1px #7f7f7f;
+    min-height: 15rem;
+    align-content: center;
+    box-shadow: 16px 16px 0px 0 #366fd1
+}
+
+.custom-solid-card {
+    text-align: center;
+    padding: 1rem 3rem;
+    background-color: #366fd1;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0 0 #3c3c3c;
+    color: #fff;
+}
+
+.seta-baixo {
+    text-align: center;
+    font-weight: bolder;
+    color: #366fd1;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.metodologia-esquema {
+    width: 400px;
+    margin: auto;
+}
+
+.preco {
+    display: inline-flex;
+    margin: auto;
+}
+
+.preco h5 {
+    font-weight: 600;
+    color: #7f7f7f;
+}
+
+.preco h4 {
+    font-weight: 600;
+}
+
+.custom-container h3 {
+    border-left: solid 7px #4f4f4f;
+    padding-left: 1rem;
+}
+
+section {
+    display: inline;
+    margin-bottom: 3rem;
+}
+
+.custom-container {
+    width: 90%;
+    margin: auto;
+}
+
+article {
+    font-family: 'Zalando Sans', sans-serif;
+    text-align: justify;
+    font-size: 14pt;
+    line-height: 2.2;
+    font-weight: 200;
+}
+
+.professor-img {
+    margin: auto;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    box-shadow: 3px white;
+    padding: 1rem;
+}
+
+.section-professor div {
+    display: grid;
+}
+
+.desconto-aviso {
+    font-size: 0.8rem;
+    margin: 1.5rem auto;
+    color: #7f7f7f;
+}
+
+.investimento-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+    justify-content: space-around;
+}
+
+.investimento-container .card {
+    margin-bottom: 1rem;
+    width: 20rem;
+    box-shadow: 0 4px 8px 0 rgba(108, 108, 108, 0.2);
+    transition: 0.3s;
+    padding: 3rem;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+.card h1, h2, h3, h4, h5 {
+    font-family: 'sansation', sans-serif;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(108, 108, 108, 0.3);
+}
+
+.botao-card {
+    color: #366fd1;
+    border: solid 0.5px #366fd1;
+    border-radius: 50px;
+    padding: 0.7rem 1.5rem;
+    width: fit-content;
+    margin: auto auto 0 auto;
+}
+
+.botao-card:hover {
+    background-color: #366fd1;
+    color: #ffffff;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.accordion {
+    font-family: 'sansation', sans-serif;
+    color: #7f7f7f;
+    font-size: 14pt;
+}
+
+.accordion-item {
+    background-color: transparent;
+}
+
+.accordion-button {
+    background-color: transparent;
+    font-family: sans-serif;
+}
+
+    .accordion-button:not(.collapsed) {
+        color: #366fd1;
+        background-color: transparent;
+        box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+    }
+
+    .accordion-button:focus {
+        z-index: 3;
+        border-color: #84acf1;
+        outline: 0;
+        box-shadow: 0 0 0 .25rem rgba(83, 100, 255, 0.25);
+    }
+
+
+.nav-link:hover  {
+    color: #366fd1;
+    border-bottom: 2px solid #366fd1;
+    transition: color 0.4s ease-in;
+}
+
+.navbar-nav {
+    margin: auto 0 auto auto;
+}
+
+.navbar .container-fluid {
+    margin: auto 2rem;
+}
+
+.navbar ul li {
+    margin: auto 0.5rem;
+}
+
+.section-materiais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-materiais img {
+    width: 9rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.accordion-body {
+    color: #4f4f4f;
+}
+
+.accordion-header button {
+    color: #4f4f4f;
+}
