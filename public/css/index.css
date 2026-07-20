@@ -1,6 +1,9 @@
-﻿
+﻿.custom-container {
+    margin: 0 auto 0 auto;
+    padding: 0;
+}
+
 .text-center {
-    font-family: "DM Serif Text", serif;;
     color: #366fd1;
     word-spacing: 1rem;
     margin-bottom: 3rem;
@@ -15,14 +18,17 @@
     color: rgb(151, 151, 151);
 }
 
-.footer-container a:hover 
-{
+.footer-container a:hover {
     color: #366fd1;
 }
 
 .section-aulas h3 {
     margin-bottom: 3rem;
     margin-top: 3rem;
+}
+
+.section-aulas article {
+    display: flex;
 }
 
 .section-container article {
@@ -33,7 +39,7 @@
     border: solid 1px #366fd1;
 }
 
-.foco-texto{
+.foco-texto h4 {
     background-color: #366fd1;
     color: #fff;
     border-radius: 3px;
@@ -75,7 +81,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
+}
+
+.content-container {
+    text-align: center;
+}
+
+.img-container img {
+    width: 130px;
+    height: 130px;
 }
 
 .metodologia-esquema {
@@ -98,18 +112,13 @@
 }
 
 .custom-container h3 {
-    border-left: solid 7px #4f4f4f;
+    border-left: solid 3px #4f4f4f;
     padding-left: 1rem;
 }
 
 section {
     display: inline;
     margin-bottom: 3rem;
-}
-
-.custom-container {
-    width: 90%;
-    margin: auto;
 }
 
 article {
@@ -154,10 +163,14 @@ article {
     padding: 3rem;
     border-radius: 5px;
     text-align: center;
-    
+
 }
 
-.card h1, h2, h3, h4, h5 {
+.card h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'sansation', sans-serif;
 }
 
@@ -196,36 +209,23 @@ article {
     font-family: sans-serif;
 }
 
-    .accordion-button:not(.collapsed) {
-        color: #366fd1;
-        background-color: transparent;
-        box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
-    }
-
-    .accordion-button:focus {
-        z-index: 3;
-        border-color: #84acf1;
-        outline: 0;
-        box-shadow: 0 0 0 .25rem rgba(83, 100, 255, 0.25);
-    }
-
-
-.nav-link:hover  {
+.accordion-button:not(.collapsed) {
     color: #366fd1;
-    border-bottom: 2px solid #366fd1;
-    transition: color 0.4s ease-in;
+    background-color: transparent;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
 }
 
-.navbar-nav {
-    margin: auto 0 auto auto;
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #84acf1;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(83, 100, 255, 0.25);
 }
 
-.navbar .container-fluid {
-    margin: auto 2rem;
-}
 
 .navbar ul li {
-    margin: auto 0.5rem;
+    height: 100%;
+    margin: 0 0.5rem;
 }
 
 .section-materiais {
@@ -248,4 +248,36 @@ article {
 
 .accordion-header button {
     color: #4f4f4f;
+}
+
+/*navbar*/
+.navbar-light .navbar-nav .nav-link {
+    color: #4f4f4f;
+    margin: 0.5rem auto;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #366fd1;
+    border-bottom: 2px solid #366fd1;
+    transition: color 0.4s ease-in;
+}
+
+.navbar-nav {
+    margin: auto 0 auto auto;
+    height: 100%;
+}
+
+.navbar .container-fluid {
+    height: max-content;
+    margin: auto 4rem;
+}
+
+.navbar {
+    box-shadow: 0 0 10px 10px #6464643d;
+    border-radius: 0px 0px 15px 15px;
+    padding: 0;
+}
+
+.collapse {
+    height: 100%;
 }
