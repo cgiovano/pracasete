@@ -130,12 +130,10 @@ article {
 }
 
 .professor-img {
-    margin: auto;
+    margin: 2rem auto auto auto;
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
-    box-shadow: 3px white;
-    padding: 1rem;
 }
 
 .section-professor div {
@@ -144,8 +142,9 @@ article {
 
 .desconto-aviso {
     font-size: 0.8rem;
-    margin: 1.5rem auto;
+    margin: auto;
     color: #7f7f7f;
+    width: 83%;
 }
 
 .investimento-container {

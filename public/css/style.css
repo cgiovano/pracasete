@@ -1,0 +1,576 @@
+/* ==========================================================================
+   CSS Refatorado - Praça Sete
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Variáveis Globais & Configurações de Tema
+   -------------------------------------------------------------------------- */
+:root {
+  /* Cores Base */
+  --primary-blue: #366fd1;
+  --primary-blue-dark: #2d59a4;
+  --primary-blue-light: #84acf1;
+  --text-dark: #515151;
+  --text-darker: #1e2029;
+  --text-muted: #7f7f7f;
+  --bg-light: #ffffff;
+  --bg-dark: #232323;
+
+  /* Gradientes (Preservados do código original) */
+  --grad-section-sobre: linear-gradient(to bottom, #2d59a4, #0b3454);
+  --grad-overlay: linear-gradient(to top, rgba(24, 21, 63, 0.8), rgba(0, 0, 0, 0.3));
+
+  /* Tipografia */
+  --font-main: 'sansation', system-ui, -apple-system, sans-serif;
+  --font-serif: 'DM Serif Text', serif;
+  --font-body: 'Zalando Sans', 'sansation', sans-serif;
+
+  /* Transições & Sombras */
+  --transition-fast: all 0.2s ease-in-out;
+  --transition-smooth: all 0.3s ease-in-out;
+  --shadow-card: 0px 0px 15px 10px rgba(0, 0, 0, 0.15);
+  --shadow-navbar: 0 0 10px 10px rgba(100, 100, 100, 0.24);
+}
+
+/* --------------------------------------------------------------------------
+   2. Reset & Tipografia Global
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-main);
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-main);
+  font-weight: 600;
+}
+
+article {
+  font-family: var(--font-body);
+  text-align: justify;
+  font-size: 1.15rem;
+  line-height: 2;
+  font-weight: 300;
+}
+
+.highlight-blue {
+  color: var(--primary-blue);
+}
+
+.logo {
+  padding: 0.5rem;
+  width: 6rem;
+}
+
+/* --------------------------------------------------------------------------
+   3. Navbar (Preservada a estrutura visual original)
+   -------------------------------------------------------------------------- */
+header {
+  width: 100%;
+  z-index: 1000;
+}
+
+nav.navbar {
+  width: 96%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-navbar);
+  border-radius: 0 0 15px 15px;
+  padding: 0;
+}
+
+.navbar .container-fluid {
+  height: max-content;
+  margin: auto 2rem;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  align-items: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--text-darker);
+  margin: 0.5rem 0.75rem;
+  font-weight: 500;
+  border-bottom: transparent solid 3px;
+  transition: var(--transition-smooth);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--primary-blue);
+  border-bottom: 3px solid var(--primary-blue);
+  padding-bottom: 3px;
+  transition: var(--transition-smooth);
+}
+
+/* --------------------------------------------------------------------------
+   4. Content Panel & Hero Section
+   -------------------------------------------------------------------------- */
+.content-panel {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.painel-apresentacao {
+  min-height: 40rem;
+  width: 100%;
+}
+
+.painel-apresentacao img{
+    margin: -100px -50px 0 0;
+}
+
+.painel-text {
+  padding: 4rem;
+}
+
+.painel-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.painel-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.painel-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guitar-img {
+    padding: 0px;
+}
+
+/* Botão Customizado */
+.custom-btn {
+  color: #FFF;
+  width: 16rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--primary-blue);
+  transition: var(--transition-fast);
+  cursor: pointer;
+}
+
+.custom-btn:hover {
+  background-color: var(--primary-blue-dark);
+  color: #ffffff;
+  box-shadow: 0px 0px 10px 0px rgba(95, 95, 95, 0.67);
+}
+
+/* --------------------------------------------------------------------------
+   5. Seção Sobre (Cards Inclinados)
+   -------------------------------------------------------------------------- */
+.section-sobre {
+  margin: 4rem auto;
+  box-shadow: var(--shadow-card);
+  background: var(--grad-section-sobre);
+  color: #fff;
+  border-radius: 0.5rem;
+  transform: skewY(4deg);
+  padding: 3rem 1rem;
+}
+
+.apresentacao-section-card-container {
+  transform: skewY(-4deg);
+}
+
+.apresentacao-section-card {
+  display: flex;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.apresentacao-section-card-content-container {
+  margin: auto;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.img-container img {
+  width: 100px;
+  height: 100px;
+}
+
+.content-container h5 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.content-container p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* --------------------------------------------------------------------------
+   6. Títulos de Seções & Accordion (Trilhas)
+   -------------------------------------------------------------------------- */
+.section-title, 
+.container h4 {
+  color: var(--primary-blue);
+  font-weight: 600;
+  margin: 4rem 0 2rem 0;
+  text-align: center;
+}
+
+.accordion-container {
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.accordion-item {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.accordion-button {
+  background-color: transparent;
+  font-family: var(--font-main);
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--primary-blue);
+  background-color: transparent;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+}
+
+.accordion-button:focus {
+  border-color: var(--primary-blue-light);
+  box-shadow: 0 0 0 0.25rem rgba(54, 111, 209, 0.25);
+}
+
+.accordion-body {
+  color: var(--text-dark);
+}
+
+/* --------------------------------------------------------------------------
+   7. Método & Overlay
+   -------------------------------------------------------------------------- */
+.section-comofunciona-container {
+  display: grid;
+  color: #fff;
+  border-radius: 0.9rem;
+  overflow: hidden;
+}
+
+.section-comofunciona-img-test {
+  grid-area: 1 / 1;
+  background-image: url('../img/img-generated.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+}
+
+.section-comofunciona-overlay {
+  grid-area: 1 / 1;
+  background: var(--grad-overlay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+}
+
+.metodo-texto article {
+  color: #fff;
+}
+
+.section-comofunciona-h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   8. Seção Professor
+   -------------------------------------------------------------------------- */
+.section-professor-card {
+  width: 85%;
+  max-width: 900px;
+  margin: auto;
+  background-color: var(--bg-light);
+  border: 2px var(--primary-blue) solid;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 15px 10px rgba(61, 68, 89, 0.15);
+  padding: 3rem;
+}
+
+.section-professor-inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.professor-img {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  border: 3px rgba(61, 68, 89) dashed;
+  object-fit: cover;
+}
+
+.social-media-links {
+    text-align: center;
+}
+
+.social-media-links a {
+    transition: var(--transition-fast);
+}
+
+.social-media-links a:hover {
+    filter: invert(34%) sepia(94%) saturate(929%) hue-rotate(194deg) brightness(90%) contrast(86%);
+    transition: var(--transition-fast);
+}
+
+/* --------------------------------------------------------------------------
+   9. Investimento & Cards
+   -------------------------------------------------------------------------- */
+.investimento-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.investimento-container .card {
+  width: 20rem;
+  padding: 2.5rem 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  background-color: var(--bg-light);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 2px solid  rgba(0, 0, 0, 0.1);
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.investimento-container .card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: 2px solid var(--primary-blue);
+  transition: var(--transition-smooth);
+}
+
+.card .foco-texto {
+  background-color: var(--primary-blue);
+  color: #fff;
+  padding: 0.4rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+#tempo-aviso-reserva {
+  font-size: 0.85rem;
+  border: 1px solid var(--primary-blue-light);
+  border-radius: 5px;
+  color: var(--primary-blue);
+  margin-top: 0.5rem;
+}
+
+.preco {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.25rem;
+  margin: 0.5rem 0;
+}
+
+.preco .moeda {
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.preco .valor {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-darker);
+}
+
+.tachado {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+.desconto-aviso {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+.regras-desconto {
+  width: 85%;
+  margin: 0 auto 4rem auto;
+}
+
+.card h4{
+    color: var(--primary-blue);
+    font-weight: 600;
+    margin: 1rem auto 2rem auto;
+    text-align: center;
+}
+
+.botao-card {
+  color: var(--primary-blue);
+  border: 1px solid var(--primary-blue);
+  border-radius: 50px;
+  padding: 0.6rem 1.5rem;
+  width: fit-content;
+  margin: 1.5rem auto 0 auto;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.botao-card:hover {
+  background-color: var(--primary-blue);
+  color: #ffffff;
+}
+
+.disabled {
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.pagamento-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.pagamento-logo img {
+  margin: auto;
+}
+
+/* --------------------------------------------------------------------------
+   10. FAQ
+   -------------------------------------------------------------------------- */
+
+.section-faq .card {
+  padding: 1.3rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 2px solid  rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+.section-faq .card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: 2px solid var(--primary-blue);
+  transition: var(--transition-smooth);
+}
+
+/* --------------------------------------------------------------------------
+   11. Footer
+   -------------------------------------------------------------------------- */
+footer.footer {
+  width: 100%;
+  padding: 4rem 2rem 2rem 2rem;
+  background-color: var(--bg-dark);
+  color: var(--text-muted);
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+footer ul a {
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+footer ul a:hover {
+  color: var(--primary-blue-light);
+}
+
+.copy {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  border-top: 1px solid #333;
+  padding-top: 1.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   11. Responsividade (Media Queries)
+   -------------------------------------------------------------------------- */
+@media (min-width: 992px) {
+  .section-professor-inner-container {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 991px) {
+  .painel-apresentacao {
+    text-align: center;
+  }
+  .guitar-img {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+    .painel-text {
+        background-color: #ffffff8f;
+        backdrop-filter: blur(5px);
+        position: absolute;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+  nav.navbar {
+    width: 90%;
+  }
+  .accordion-container,
+  .section-professor-card,
+  .regras-desconto {
+    width: 95%;
+  }
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}

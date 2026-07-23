@@ -1,44 +1,42 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Praça Sete</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <title>Praça Sete | O Violão Descomplicado</title>
+    
+    <!-- Google Fonts & Bootstrap 5 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="css/site.css" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Custom Refactored Stylesheet -->
+    <link rel="stylesheet" href="../public/css/style.css" />
 </head>
 
 <body>
-    <header>
+    <!-- Header / Navbar -->
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a href="#"><img class="logo" src="./img/pracasete_logo_dark.png" /></a>
+                <a href="#"><img class="logo" src="./img/pracasete_logo_dark.png" alt="Praça Sete Logo" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcontent"
-                    aria-controls="navbarcontent" aria-expanded="false" aria-label="abrir painel de navegação">
+                    aria-controls="navbarcontent" aria-expanded="false" aria-label="Abrir painel de navegação">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarcontent">
-                    <ul class="navbar-nav ">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#sobre">Início</a>
+                            <a class="nav-link" href="#metodo">Método</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#como_funciona">Método</a>
+                            <a class="nav-link" href="#trilhas">Trilhas de aprendizado</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#o_que_voce_vai_aprender">Aulas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#professor">Sobre</a>
+                            <a class="nav-link" href="#professor">Professor</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#investimento">Investimento</a>
@@ -49,11 +47,13 @@
         </nav>
     </header>
 
-    <div class="content-panel">
-        <div class="painel-apresentacao row">
-            <div class="painel-text col">
+    <!-- Main Content Panel -->
+    <main class="content-panel">
+        <!-- Hero Section -->
+        <section class="painel-apresentacao row align-items-center" id="inicio">
+            <div class="painel-text col-lg-6 col-md-12">
                 <h1>
-                    O violão descomplicado em <span style="color: #366fd1;">qualquer lugar</span>.
+                    O violão descomplicado em <span class="highlight-blue">qualquer lugar</span>.
                 </h1>
                 <p>
                     Aprenda de forma prática, descomplicada e no seu ritmo. Iniciante ou avançado, com método e
@@ -61,373 +61,341 @@
                 </p>
 
                 <button type="button" class="custom-btn"
-                    onclick="window.open('https://forms.gle/CsuJNBcaVM5z5Cfq9', '_blank')"><strong>Quero começar
-                        agora</strong></button>
+                    onclick="window.open('https://forms.gle/CsuJNBcaVM5z5Cfq9', '_blank')">
+                    <strong>Quero começar agora</strong>
+                </button>
             </div>
-            <div class="painel-img col">
-                <img class="guitar-img" alt="violão" src="./img/classical-guitar.png" />
+            <div class="painel-img col-lg-6 col-md-12">
+                <img class="guitar-img img-fluid" alt="Violão clássico" src="./img/classical-guitar.png" />
             </div>
-        </div>
+        </section>
 
+        <!-- Features Grid / Sobre -->
         <div class="custom-container" data-bs-spy="scroll" data-bs-target="navbar">
-            <div>
-                <section class="container section-sobre row">
-                    <div class="row apresentacao-section-card-container">
-                        <div class="apresentacao-section-card col-lg-3 col-sm-12">
-                            <div class="apresentacao-section-card-content-container">
-                                <div class="img-container">
-                                    <img class="section-sobre-img" src="./img/violao.png" />
-                                </div>
-                                <div class="content-container">
-                                    <h5>Aulas práticas</h5>
-                                    <p>Aprenda com aulas objetivas e direto ao ponto.</p>
-                                </div>
+            <section class="container section-sobre">
+                <div class="row apresentacao-section-card-container">
+                    <div class="apresentacao-section-card col-lg-3 col-md-6 col-sm-12">
+                        <div class="apresentacao-section-card-content-container">
+                            <div class="img-container">
+                                <img class="section-sobre-img" src="./img/violao.png" alt="Aulas práticas" />
                             </div>
-                        </div>
-
-                        <div class="apresentacao-section-card col-lg-3 col-sm-12">
-                            <div class="apresentacao-section-card-content-container">
-                                <div class="img-container">
-                                    <img class="section-sobre-img" src="./img/relogio.png" />
-                                </div>
-                                <div class="content-container">
-                                    <h5>No seu tempo</h5>
-                                    <p>Estude onde quer que esteja e com flexibilidade de horários.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="apresentacao-section-card col-lg-3 col-sm-12">
-                            <div class="apresentacao-section-card-content-container">
-                                <div class="img-container">
-                                    <img class="section-sobre-img" src="./img/relogio.png" />
-                                </div>
-                                <div class="content-container">
-                                    <h5>Progresso de verdade</h5>
-                                    <p>Com as aulas coletivas e o acompanhamento individualizado, garantimos a
-                                        aprendizagem.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="apresentacao-section-card col-lg-3 col-sm-12">
-                            <div class="apresetacao-section-card-content-container">
-                                <div class="img-container">
-                                    <img class="section-sobre-img" src="./img/relogio.png" />
-                                </div>
-                                <div class="content-container">
-                                    <h5>Compartilha</h5>
-                                    <p>O grupo de estudos permite que você se conecte com outros alunos e
-                                        compartilhe
-                                        conhecimentos.</p>
-                                </div>
+                            <div class="content-container">
+                                <h5>Aulas práticas</h5>
+                                <p>Aprenda com aulas objetivas e direto ao ponto.</p>
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
+
+                    <div class="apresentacao-section-card col-lg-3 col-md-6 col-sm-12">
+                        <div class="apresentacao-section-card-content-container">
+                            <div class="img-container">
+                                <img class="section-sobre-img" src="./img/relogio.png" alt="No seu tempo" />
+                            </div>
+                            <div class="content-container">
+                                <h5>No seu tempo</h5>
+                                <p>Estude onde quer que esteja e com flexibilidade de horários.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="apresentacao-section-card col-lg-3 col-md-6 col-sm-12">
+                        <div class="apresentacao-section-card-content-container">
+                            <div class="img-container">
+                                <img class="section-sobre-img" src="./img/progresso.png" alt="Progresso de verdade" />
+                            </div>
+                            <div class="content-container">
+                                <h5>Progresso</h5>
+                                <p>Com as aulas coletivas e o acompanhamento individualizado, garantimos a aprendizagem.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="apresentacao-section-card col-lg-3 col-md-6 col-sm-12">
+                        <div class="apresentacao-section-card-content-container">
+                            <div class="img-container">
+                                <img class="section-sobre-img" src="./img/comunidade.png" alt="Compartilha" />
+                            </div>
+                            <div class="content-container">
+                                <h5>Comunidade</h5>
+                                <p>O grupo de estudos permite que você se conecte com outros alunos e compartilhe experiências.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
 
-
-        <section class="container section-conteudo">
-            <h4 class="text-center" id="o_que_voce_vai_aprender">Trilhas de aprendizado</h4>
+        <!-- Trilhas de Aprendizado -->
+        <section class="container section-conteudo" id="trilhas">
+            <h4 class="section-title">Trilhas de aprendizado</h4>
             <div class="accordion-container">
-                <div class="accordion d-block">
+                <div class="accordion" id="trilhasAccordion">
                     <div class="accordion-item">
-                        <h1 class="accordion-header">
+                        <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 Primeiros acordes
                             </button>
-                        </h1>
-                        <div id="collapseOne" class="accordion-collapse collapse show"
-                            data-bs-parent="#accordionExample">
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#trilhasAccordion">
                             <div class="accordion-body">
-                                <p class="desconto-aviso">
-                                    Foco na base do violão popular
-                                </p>
+                                <p class="desconto-aviso">Foco na base do violão popular</p>
                                 <ul>
-                                    <li><strong>Montagem de Acordes:</strong> Aprender a interpretar diagramas
-                                        de
-                                        acordes e posicionar corretamente os dedos no braço do violão.</li>
-                                    <li><strong>Ritmos Simples:</strong> Desenvolver batidas básicas utilizando
-                                        a
-                                        mão direita.</li>
-                                    <li><strong>Noções de Teoria Musical:</strong> Compreender conceitos
-                                        fundamentais de tempo, ritmo e tonalidade.</li>
-                                    <li><strong>Harmonia Básica:</strong> Introdução ao campo harmônico e
-                                        acordes
-                                        com sétima aplicados ao instrumento.</li>
-                                    <li><strong>Repertório:</strong> Tocar músicas de estrutura simples com
-                                        fluência, ampliando gradualmente o repertório.</li>
-                                    <li><strong>Independência das Mãos:</strong> Exercitar a independência dos
-                                        dedos
-                                        das mãos esquerda e direita, visando maior controle e precisão.</li>
+                                    <li><strong>Montagem de Acordes:</strong> Aprender a interpretar diagramas de acordes e posicionar corretamente os dedos no braço do violão.</li>
+                                    <li><strong>Ritmos Simples:</strong> Desenvolver batidas básicas utilizando a mão direita.</li>
+                                    <li><strong>Noções de Teoria Musical:</strong> Compreender conceitos fundamentais de tempo, ritmo e tonalidade.</li>
+                                    <li><strong>Harmonia Básica:</strong> Introdução ao campo harmônico e acordes com sétima aplicados ao instrumento.</li>
+                                    <li><strong>Repertório:</strong> Tocar músicas de estrutura simples com fluência, ampliando gradualmente o repertório.</li>
+                                    <li><strong>Independência das Mãos:</strong> Exercitar a independência dos dedos das mãos esquerda e direita, visando maior controle e precisão.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+
                     <div class="accordion-item">
-                        <h1 class="accordion-header">
+                        <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 Mestre do acompanhamento
                             </button>
-                        </h1>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#trilhasAccordion">
                             <div class="accordion-body">
-                                <p class="desconto-aviso">
-                                    Foco no violão de acompanhamento
-                                </p>
+                                <p class="desconto-aviso">Foco no violão de acompanhamento</p>
                                 <ul>
-                                    <li><strong>Notas no Braço do Violão:</strong> Identificar e localizar as
-                                        notas
-                                        ao longo do braço do instrumento.</li>
-                                    <li><strong>Leitura de Partituras:</strong> Compreender a notação musical e
-                                        aplicá-la ao violão.</li>
-                                    <li><strong>Harmonia Intermediária:</strong> Estudo aprofundado do campo
-                                        harmônico maior e menor, incluindo acordes com nona, décima primeira e
-                                        décima terceira.</li>
-                                    <li><strong>Ritmos Elaborados:</strong> Desenvolver ritmos mais complexos
-                                        com a
-                                        mão direita.</li>
-                                    <li><strong>Escalas e Arpejos:</strong> Praticar escalas e arpejos para
-                                        aprimorar a técnica e o conhecimento do instrumento.</li>
+                                    <li><strong>Notas no Braço do Violão:</strong> Identificar e localizar as notas ao longo do braço do instrumento.</li>
+                                    <li><strong>Leitura de Partituras:</strong> Compreender a notação musical e aplicá-la ao violão.</li>
+                                    <li><strong>Harmonia Intermediária:</strong> Estudo aprofundado do campo harmônico maior e menor, incluindo acordes com nona, décima primeira e décima terceira.</li>
+                                    <li><strong>Ritmos Elaborados:</strong> Desenvolver ritmos mais complexos com a mão direita.</li>
+                                    <li><strong>Escalas e Arpejos:</strong> Praticar escalas e arpejos para aprimorar a técnica e o conhecimento do instrumento.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+
                     <div class="accordion-item">
-                        <h1 class="accordion-header">
+                        <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 Gênio criativo
                             </button>
-                        </h1>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#trilhasAccordion">
                             <div class="accordion-body">
-                                <p class="desconto-aviso">
-                                    Foco na criação musical
-                                </p>
+                                <p class="desconto-aviso">Foco na criação musical</p>
                                 <ul>
-                                    <li><strong>Audição Musical:</strong> Desenvolver a habilidade de tirar
-                                        músicas
-                                        simples de ouvido.</li>
-                                    <li><strong>Re-harmonização:</strong> Aplicar técnicas de re-harmonização em
-                                        canções.</li>
-                                    <li><strong>Leitura Avançada de Partituras:</strong> Aprofundar a leitura e
-                                        aplicação da notação musical ao instrumento.</li>
-                                    <li><strong>Técnicas Avançadas para Mão Direita:</strong> Explorar
-                                        alternância
-                                        de dedos, trêmolo e toque apoiado.</li>
-                                    <li><strong>Violão Solo:</strong> Introdução aos conceitos e execução de
-                                        peças
-                                        solo no violão.</li>
+                                    <li><strong>Audição Musical:</strong> Desenvolver a habilidade de tirar músicas simples de ouvido.</li>
+                                    <li><strong>Re-harmonização:</strong> Aplicar técnicas de re-harmonização em canções.</li>
+                                    <li><strong>Leitura Avançada de Partituras:</strong> Aprofundar a leitura e aplicação da notação musical ao instrumento.</li>
+                                    <li><strong>Técnicas Avançadas para Mão Direita:</strong> Explorar alternância de dedos, trêmolo e toque apoiado.</li>
+                                    <li><strong>Violão Solo:</strong> Introdução aos conceitos e execução de peças solo no violão.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+
                     <div class="accordion-item">
-                        <h1 class="accordion-header">
+                        <h2 class="accordion-header" id="headingFour">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                 Cheio de dedos
                             </button>
-                        </h1>
-                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#trilhasAccordion">
                             <div class="accordion-body">
-                                <p class="desconto-aviso">
-                                    Foco no violão solo
-                                </p>
+                                <p class="desconto-aviso">Foco no violão solo</p>
                                 <ul>
-                                    <li><strong>Modos Gregos:</strong> Compreensão e aplicação dos modos gregos
-                                        no
-                                        violão.</li>
-                                    <li><strong>Transposição Tonal:</strong> Praticar a mudança de tonalidade de
-                                        músicas e exercícios.</li>
-                                    <li><strong>Improvisação:</strong> Estudo dos fundamentos da improvisação no
-                                        instrumento.</li>
-                                    <li><strong>Arranjo e Composição:</strong> Desenvolver habilidades para
-                                        criar
-                                        arranjos e composições próprias.</li>
-                                    <li><strong>Leitura Avançada de Partituras:</strong> Aprimorar ainda mais a
-                                        leitura e execução musical diretamente da partitura.</li>
-                                    <li><strong>Violão Solo:</strong> Consolidação de técnicas para performance
-                                        solo.</li>
+                                    <li><strong>Modos Gregos:</strong> Compreensão e aplicação dos modos gregos no violão.</li>
+                                    <li><strong>Transposição Tonal:</strong> Praticar a mudança de tonalidade de músicas e exercícios.</li>
+                                    <li><strong>Improvisação:</strong> Estudo dos fundamentos da improvisação no instrumento.</li>
+                                    <li><strong>Arranjo e Composição:</strong> Desenvolver habilidades para criar arranjos e composições próprias.</li>
+                                    <li><strong>Leitura Avançada de Partituras:</strong> Aprimorar ainda mais a leitura e execução musical diretamente da partitura.</li>
+                                    <li><strong>Violão Solo:</strong> Consolidação de técnicas para performance solo.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
 
-
-        <section class="container section-comofunciona">
-            <h4>Nosso método</h4>
+        <!-- Nosso Método -->
+        <section class="container section-comofunciona" id="metodo">
+            <h4 class="section-title">Nosso método</h4>
             <div class="section-comofunciona-container">
                 <div class="section-comofunciona-img-test"></div>
-                <!--<img class="section-comofunciona-img" src="./img/img-generated.png" />-->
                 <div class="section-comofunciona-overlay">
-                    <div class="col-lg-4 metodo-texto">
-                        <article class="row">
-                            <h1 class="section-comofunciona-h1">Não importa o objetivo, avançamos juntos.</h1>
+                    <div class="col-lg-8 col-md-10 metodo-texto">
+                        <article>
+                            <h2 class="section-comofunciona-h1">Não importa o objetivo, avançamos juntos.</h2>
                             <p>Nosso método é baseado em grupos de estudo, com turmas de até dez alunos e conta com
-                                aulas
-                                semanais ao vivo e aulas de tutoria individuais conforme a necessidade do aluno. O
+                                aulas semanais ao vivo e aulas de tutoria individuais conforme a necessidade do aluno. O
                                 acompanhamento é individualizado, com feedbacks e orientações personalizadas.</p>
                         </article>
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <section class="container section-valores">
-            <h4 class="text-center" id="investimento">Investimento</h4>
-            <div class="">
-                <div class="investimento-container">
-                    <div class="card foco">
-                        <div>
-                            <h4 class="foco-texto">Pré-venda</h4>
-                            <p>De</p>
-                            <div class="preco">
-                                <h4 class="tachado">R$759,90</h4>
-                            </div>
-
-                            <p>Por</p>
-
-                            <div class="preco">
-                                <h5>R$</h5>
-                                <h1>531,90***</h1>
-                            </div>
-
-                            <p class="desconto-aviso">***com 30% de desconto até 30/02</p>
-                        </div>
-
-                        <div class="botao-card" onclick="window.open('https://forms.gle/CsuJNBcaVM5z5Cfq9', '_blank')">
-                            <span>Tenho interesse ❯</span>
-                        </div>
-                    </div>
-
-                    <div class="card disabled">
-                        <div>
-                            <h4>Público em geral</h4>
-                            <p>De</p>
-                            <div class="preco">
-                                <h4>R$759,90</h4>
-                            </div>
-
-                            <p>Por</p>
-
-                            <div class="preco">
-                                <h5>R$</h5>
-                                <h1>645,90*</h1>
-                            </div>
-                            <p class="desconto-aviso">*Desconto de 15% para pagamentos à vista via pix</p>
-                        </div>
-                        <div class="botao-card" src="https://forms.gle/CsuJNBcaVM5z5Cfq9">
-                            <span>Tenho interesse ❯</span>
-                        </div>
-                    </div>
-
-                    <div class="card disabled">
-                        <div>
-                            <h4>Estudantes de instituições públicas</h4>
-                            <p>De</p>
-                            <div class="preco">
-                                <h4>R$759,90</h4>
-                            </div>
-
-                            <p>Por</p>
-
-                            <div class="preco">
-                                <h5>R$</h5>
-                                <h1>585,65**</h1>
-                            </div>
-                            <p class="desconto-aviso">**Desconto de 25% para estudantes de instituições
-                                públicas</p>
-                        </div>
-
-                        <div class="botao-card" src="https://forms.gle/CsuJNBcaVM5z5Cfq9">
-                            <span>Tenho interesse ❯</span>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <div>
-                    <p class="desconto-aviso">
-                        *Descontos válidos somente nos seguintes casos:
-                    </p>
-                    <ol class="desconto-aviso">
-                        <li>Público em geral: realizando o pagamento à vista dentro do período promocional
-                            (pré-venda, datas comemorativas ou promocionais), ou
-                            realizando o pagamento à vista fora do período promocional. Caso seja parcelado o
-                            valor
-                            será integral, sem descontos.</li>
-                        <li>Estudantes: realizando o pagamento à vista mediante comprovação de situação
-                            estudantil
-                            (carteirinha, comprovante de matrícula ou outro documento que ateste sua condição)
-                        </li>
-                    </ol>
-                </div>
-            </div>
-        </section>
-
-        <section class="container">
-            <div class="section-professor">
+        <!-- Conheça o Professor -->
+        <section class="section-professor container" id="professor">
+            <h4 class="section-title">Conheça o professor</h4>
+            <div class="section-professor-card">
                 <div class="section-professor-inner-container">
-                    <h4 class="text-center" id="professor">Conheça o professor</h4>
-                    <div class="">
-                        <img class="professor-img" src="./img/professor.png" />
-                        <article>
-                            Giovano é violonista e professor licenciado em Música pela Universidade Federal do
-                            Ceará,
-                            especialista em Música e Cognição, e mestre em Música pela Universidade Federal da
-                            Paraíba.
-                            Ao
-                            longo de sua trajetória acadêmica e artística, dedicou-se ao ensino e ao violão,
-                            trabalhando
-                            em
-                            arranjos e composições próprias.
-                        </article>
+                    <img class="professor-img" src="./img/professor.png" alt="Professor Giovano" />
+                    <article>
+                        Giovano é violonista e professor licenciado em Música pela Universidade Federal do Ceará,
+                        especialista em Música e Cognição, e mestre em Música pela Universidade Federal da Paraíba.
+                        Ao longo de sua trajetória acadêmica e artística, dedicou-se ao ensino e ao violão,
+                        trabalhando em arranjos e composições próprias.
+                    </article>
+                </div>
+                <div class="grid mt-5 social-media-links">
+                    <div class="row">
+                        <a class="col-4" href="https://www.youtube.com/@CGiovano"><img src="./img/YouTube-Almost-Black-Logo.wine.svg" alt="Youtube" height="84"/></a>
+                        <a class="col-4" href="https://www.instagram.com/cgiovano.violao/"><img src="./img/Instagram-Wordmark-Black-Logo.wine.svg" alt="Instagram" height="84"/></a>
+                        <a class="col-4" href="https://apoia.se/cgiovano"><img src="./img/apoiase-logo-svg.svg" alt="Apoia.se" height="84"/></a>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
-    </div>
-</body>
-<footer class="footer">
 
-    <div>
+        <!-- Investimento -->
+        <section class="container section-valores" id="investimento">
+            <h4 class="section-title">Investimento</h4>
+            <div class="investimento-container">
+                <!-- Card 1: Pré-venda -->
+                <div class="card foco" id="card-promocao-reserva">
+                    <div>
+                        <h4 class="foco-texto">Reserva</h4>
+                        <p>De</p>
+                        <div class="preco">
+                            <h5 class="tachado">R$759,90</h5>
+                        </div>
+                        <p>Por</p>
+                        <div class="preco">
+                            <span class="moeda">R$</span>
+                            <span class="valor">531,90***</span>
+                        </div>
+                        <p class="desconto-aviso">***30% OFF na reserva</p>
+                        <p id="tempo-aviso-reserva"></p>
+                    </div>
+                    <div class="botao-card" onclick="window.open('https://forms.gle/CsuJNBcaVM5z5Cfq9', '_blank')">
+                        <span>Tenho interesse ❯</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: Público em geral -->
+                <div class="card disabled" id="card-inscricao-publico-geral">
+                    <div>
+                        <h4>Público em geral</h4>
+                        <p>De</p>
+                        <div class="preco">
+                            <h5 class="tachado">R$759,90</h5>
+                        </div>
+                        <p>Por</p>
+                        <div class="preco">
+                            <span class="moeda">R$</span>
+                            <span class="valor">645,90*</span>
+                        </div>
+                        <p class="desconto-aviso">*Desconto de 15% para pagamentos à vista via pix</p>
+                    </div>
+                    <div class="botao-card">
+                        <span>Tenho interesse ❯</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Estudantes -->
+                <div class="card disabled" id="card-inscricao-publico-estudante">
+                    <div>
+                        <h4>Estudantes de instituições públicas</h4>
+                        <p>De</p>
+                        <div class="preco">
+                            <h5 class="tachado">R$759,90</h5>
+                        </div>
+                        <p>Por</p>
+                        <div class="preco">
+                            <span class="moeda">R$</span>
+                            <span class="valor">585,65**</span>
+                        </div>
+                        <p class="desconto-aviso">**Desconto de 25% para estudantes de instituições públicas</p>
+                    </div>
+                    <div class="botao-card">
+                        <span>Tenho interesse ❯</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid pagamento-logo">
+                <div class="row">
+                    <div class="col-6"><img class="me-3" src="./img/Pix_(Brazil)_logo.svg" alt="pix" height="40px"/></div>
+                    <div class="col-6"><img class="ms-3" src="./img/mercado-pago.svg" alt="mercado pago" height="40px"/></div>
+                </div>
+            </div>
+
+            <div class="regras-desconto">
+                <p class="desconto-aviso">
+                    *Descontos válidos somente nos seguintes casos:
+                </p>
+                <ol class="desconto-aviso">
+                    <li>Público em geral: realizando o pagamento à vista dentro do período promocional
+                        (pré-venda, datas comemorativas ou promocionais), ou realizando o pagamento à vista fora do período promocional. Caso seja parcelado o valor será integral, sem descontos.</li>
+                    <li>Estudantes: realizando o pagamento à vista mediante comprovação de situação estudantil (carteirinha, comprovante de matrícula ou outro documento que ateste sua condição).</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="container section-faq">
+            <h4>Perguntas frequentes</h4>
+            <div class="card">
+                <h6>O que é necessário para as aulas?</h6>
+                <p>É necessário que você tenha um instrumento em boas condições de uso, um dispositivo com câmera e microfone (como notebook, tablet ou celular) e acesso à internet com boa conexão.</p>
+            </div>
+
+            <div class="card">
+                <h6>A reserva é paga?</h6>
+                <p>Não! A reserva não é paga e serve apenas para demonstrar interesse e garantir o desconto especial. Na semana anterior ao início das aulas, entramos em contato para confirmar a inscrição e o pagamento.</p>
+            </div>
+
+            <div class="card">
+                <h6>Os descontos só servem para pagamento à vista?</h6>
+                <p>Depende! Se garantir os descontos da reserva, o valor com desconto será o mesmo tanto para pagamentos à vista via PIX ou parcelados via Mercado Pago. O mesmo vale para estudantes de instituições públicas. O desconto no pix só é válido se você perder os prazos promocionais e optar por realizar o pagamento parcelado via mercado pago.</p>
+            </div>
+
+            <div class="card">
+                <h6>Como acontecem as aulas em grupo?</h6>
+                <p>São encontros semanais com duração entre 50 minutos e 1h30m (uma vez na semana). Nessas aulas são trabalhados conteúdos gerais, orientações e momentos de discussão, apreciação, pesquisa, análise, exercícios, performances e construção de arranjos e composições.</p>
+            </div>
+
+            <div class="card">
+                <h6>Como funcionam as orientações individuais?</h6>
+                <p>A partir dos exercícios trabalhados, semanalmente são realizados encontros individuais ao vivo com o aluno, entre 10 e 20 minutos voltado para corrgir e melhorar aspectos mais individuais do aluno.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="footer-container">
-            <a href="#"><img class="logo" src="./img/pracasete_logo_light.png" /></a>
-            <ul class="">
-                <li>
-                    <a href="#sobre">Sobre</a>
-                </li>
-                <li>
-                    <a href="#como_funciona">Como funciona?</a>
-                </li>
-                <li>
-                    <a href="#o_que_voce_vai_aprender">O que você vai aprender?</a>
-                </li>
-                <li>
-                    <a href="#professor">Seu professor</a>
-                </li>
-                <li>
-                    <a href="#investimento">Investimento</a>
-                </li>
+            <a href="#"><img class="logo" src="./img/pracasete_logo_light.png" alt="Praça Sete Logo Light" /></a>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#metodo">Método</a></li>
+                <li><a href="#trilhas">Trilhas de aprendizado</a></li>
+                <li><a href="#professor">Professor</a></li>
+                <li><a href="#investimento">Investimento</a></li>
             </ul>
         </div>
-    </div>
+        <div class="copy">
+            &copy; 2023 - Praça Sete | Carlos Giovano
+        </div>
+    </footer>
 
-    <div class="copy align-text-bottom">
-        &copy; 2023 - Praca Sete | Carlos Giovano</a>
-    </div>
-</footer>
-
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="../public/script/main.js"></script>
+</body>
 </html>
