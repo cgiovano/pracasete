@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "firebase": "^12.9.0"
+    "firebase": "^12.16.0",
+    "firebase-tools": "^15.24.0"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
   }
 }

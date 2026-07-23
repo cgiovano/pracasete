@@ -127,20 +127,22 @@ nav.navbar {
 }
 
 .painel-apresentacao {
-  min-height: 40rem;
+  min-height: 24rem;
   width: 100%;
+  margin: 0;
 }
 
 .painel-apresentacao img{
-    margin: -100px -50px 0 0;
+    margin: -100px 0 0 0;
 }
 
 .painel-text {
   padding: 4rem;
+  margin: 0;
 }
 
 .painel-text h1 {
-  font-size: 2.8rem;
+  font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 
@@ -153,10 +155,7 @@ nav.navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.guitar-img {
-    padding: 0px;
+  padding: 0;
 }
 
 /* Botão Customizado */
@@ -574,9 +573,18 @@ footer ul a:hover {
 /* --------------------------------------------------------------------------
    11. Responsividade (Media Queries)
    -------------------------------------------------------------------------- */
-@media (min-width: 992px) {
+@media (min-width: 1368px) {
+  .painel-text h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1367px) {
   .section-professor-inner-container {
     flex-direction: row;
+  }
+    .painel-text h1 {
+    font-size: 2.2rem;
   }
 }
 
@@ -594,7 +602,6 @@ footer ul a:hover {
         background-color: #ffffff8f;
         backdrop-filter: blur(5px);
         position: absolute;
-        margin: 20px;
     }
 }
 
@@ -610,5 +617,25 @@ footer ul a:hover {
   .footer-container {
     flex-direction: column;
     text-align: center;
+  }
+
+  .painel-text {
+    padding: 1rem;
+    margin-top: 5rem;
+  }
+
+  .section-sobre {
+    padding: 1rem;
+    margin-top: 7rem;
+  }
+}
+
+@media (max-width: 492px) {
+  .painel-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .painel-text p {
+    font-size: 1rem;
   }
 }
