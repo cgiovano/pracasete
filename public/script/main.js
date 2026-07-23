@@ -11,12 +11,15 @@ function atualizarStatusCards() {
     const hoje = new Date();
     const dia = hoje.getDate();
     const mes = hoje.getMonth(); // 0 = Janeiro, 6 = Julho
+    const ano = hoje.getFullYear();
 
     // Elementos dos Cards
     const cardPreVenda = document.getElementById("card-promocao-reserva");
     const cardPublicoGeral = document.getElementById("card-inscricao-publico-geral");
     const cardEstudante = document.getElementById("card-inscricao-publico-estudante");
     const tempoAvisoReserva = document.getElementById("tempo-aviso-reserva");
+    const anoCopy = document.getElementById("ano-copy");
+    anoCopy.textContent = ano.toString();
 
     // Se os elementos não existirem na página, interrompe para evitar erros
     if (!cardPreVenda || !cardPublicoGeral || !cardEstudante) return;
