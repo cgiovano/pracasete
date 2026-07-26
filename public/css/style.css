@@ -161,7 +161,6 @@ nav.navbar {
 /* Botão Customizado */
 .custom-btn {
   color: #FFF;
-  width: 16rem;
   padding: 1rem;
   border: none;
   border-radius: 2rem;
@@ -643,7 +642,7 @@ footer ul a:hover {
 
 @media (max-width: 492px) {
   .painel-text h1 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
   .painel-text p {
