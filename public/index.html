@@ -253,9 +253,9 @@
                 </div>
                 <div class="grid mt-5 social-media-links">
                     <div class="row">
-                        <a class="col-md-4 col-sm-12" href="https://www.youtube.com/@CGiovano"><img src="./img/YouTube-Almost-Black-Logo.wine.svg" alt="Youtube" height="84"/></a>
-                        <a class="col-md-4 col-sm-12" href="https://www.instagram.com/cgiovano.violao/"><img src="./img/Instagram-Wordmark-Black-Logo.wine.svg" alt="Instagram" height="84"/></a>
-                        <a class="col-md-4 col-sm-12" href="https://apoia.se/cgiovano"><img src="./img/apoiase-logo-svg.svg" alt="Apoia.se" height="84"/></a>
+                        <a class="col-md-4 col-sm-12" id="youtube-logo" href="https://www.youtube.com/@CGiovano"><img src="./img/YouTube-Almost-Black-Logo.wine.svg" alt="Youtube" height="84"/></a>
+                        <a class="col-md-4 col-sm-12" id="instagram-logo" href="https://www.instagram.com/cgiovano.violao/"><img src="./img/Instagram-Wordmark-Black-Logo.wine.svg" alt="Instagram" height="84"/></a>
+                        <a class="col-md-4 col-sm-12" id="apoiase-logo" href="https://apoia.se/cgiovano"><img src="./img/apoiase-logo-svg.svg" alt="Apoia.se" height="84"/></a>
                     </div>
                 </div>
             </div>
@@ -281,9 +281,9 @@
                         <p class="desconto-aviso">***30% OFF na reserva</p>
                         <p id="tempo-aviso-reserva"></p>
                     </div>
-                    <div class="botao-card" onclick="window.open('https://forms.gle/CsuJNBcaVM5z5Cfq9', '_blank')">
+                    <a class="botao-card" href="https://forms.gle/CsuJNBcaVM5z5Cfq9">
                         <span>Tenho interesse ❯</span>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Card 2: Público em geral -->
@@ -299,11 +299,11 @@
                             <span class="moeda">R$</span>
                             <span class="valor">645,90*</span>
                         </div>
-                        <p class="desconto-aviso">*Desconto de 15% para pagamentos à vista via pix</p>
+                        <p class="desconto-aviso">*Desconto de 15% para pagamentos à vista via PIX</p>
                     </div>
-                    <div class="botao-card">
+                    <a class="botao-card" href="https://forms.gle/CsuJNBcaVM5z5Cfq9"href="https://forms.gle/CsuJNBcaVM5z5Cfq9">
                         <span>Tenho interesse ❯</span>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Card 3: Estudantes -->
@@ -321,9 +321,9 @@
                         </div>
                         <p class="desconto-aviso">**Desconto de 25% para estudantes de instituições públicas</p>
                     </div>
-                    <div class="botao-card">
+                    <a class="botao-card" href="https://forms.gle/CsuJNBcaVM5z5Cfq9">
                         <span>Tenho interesse ❯</span>
-                    </div>
+                    </a>
                 </div>
             </div>
 
@@ -339,9 +339,10 @@
                     *Descontos válidos somente nos seguintes casos:
                 </p>
                 <ol class="desconto-aviso">
-                    <li>Público em geral: realizando o pagamento à vista dentro do período promocional
-                        (pré-venda, datas comemorativas ou promocionais), ou realizando o pagamento à vista fora do período promocional. Caso seja parcelado o valor será integral, sem descontos.</li>
-                    <li>Estudantes: realizando o pagamento à vista mediante comprovação de situação estudantil (carteirinha, comprovante de matrícula ou outro documento que ateste sua condição).</li>
+                    <li>Reserva: realizando o pagamento à vista ou parcelado (com juros) dentro do período promocional
+                        (pré-venda, datas comemorativas ou promocionais).</li>
+                    <li>Público em geral: Caso perca a reserva o desconto acontece apenas para pagamento à vista. Caso opte por parcelar, o valor sem desconto será considerado (sem juros).</li>
+                    <li>Estudantes: realizando o pagamento mediante comprovação de situação estudantil (carteirinha, comprovante de matrícula ou outro documento que ateste sua condição).</li>
                 </ol>
             </div>
         </section>
@@ -350,17 +351,17 @@
             <h4>Perguntas frequentes</h4>
             <div class="card">
                 <h6>O que é necessário para as aulas?</h6>
-                <p>É necessário que você tenha um instrumento em boas condições de uso, um dispositivo com câmera e microfone (como notebook, tablet ou celular) e acesso à internet com boa conexão.</p>
+                <p>É necessário que você tenha um instrumento em boas condições de uso, um dispositivo com câmera e microfone (como notebook, tablet ou celular) e acesso à internet com boa conexão e velocidade.</p>
             </div>
 
             <div class="card">
                 <h6>A reserva é paga?</h6>
-                <p>Não! A reserva não é paga e serve apenas para demonstrar interesse e garantir o desconto especial. Na semana anterior ao início das aulas, entramos em contato para confirmar a inscrição e o pagamento.</p>
+                <p>Não! A reserva não é paga, servindo para garantir desconto exclusivo e prioridade na escolha de horários. Na semana anterior ao início das aulas, entramos em contato para confirmar a inscrição e o pagamento.</p>
             </div>
 
             <div class="card">
-                <h6>Os descontos só servem para pagamento à vista?</h6>
-                <p>Depende! Se garantir os descontos da reserva, o valor com desconto será o mesmo tanto para pagamentos à vista via PIX ou parcelados via Mercado Pago. O mesmo vale para estudantes de instituições públicas. O desconto no pix só é válido se você perder os prazos promocionais e optar por realizar o pagamento parcelado via mercado pago.</p>
+                <h6>Os descontos são válidos apenas para pagamento à vista?</h6>
+                <p>Depende! Fazendo a reserva, o valor com desconto exclusivo pode ser pago à vista via PIX ou parcelado via Mercado Pago (com acréscimo de juros). O mesmo vale para estudantes de instituições públicas, mesmo fora da campanha de reserva, tem o desconto específico para esse grupo que pode ser pago via PIX ou parcelado via Mercado Pago (com acréscimo de juros). Caso não seja estudante de instituição pública e tenha perdido o prazo de desconto de reserva, o valor promocional só é valido realizando o pagamento à vista via PIX, todavia, o valor parcelado (cheio) não terá acréscimo de juros.</p>
             </div>
 
             <div class="card">
@@ -370,7 +371,12 @@
 
             <div class="card">
                 <h6>Como funcionam as orientações individuais?</h6>
-                <p>A partir dos exercícios trabalhados, semanalmente são realizados encontros individuais ao vivo com o aluno, entre 10 e 20 minutos, voltados para corrgir e melhorar aspectos individuais.</p>
+                <p>A partir dos exercícios trabalhados, semanalmente serão realizados encontros individuais ao vivo com o aluno, entre 10 e 20 minutos, voltados para corrgir e melhorar aspectos individuais.</p>
+            </div>
+
+            <div class="card">
+                <h6>Os materiais são pagos?</h6>
+                <p>Não! Todos os materiais didáticos e arranjos disponibilizados ao longo das aulas são gratuitos.</p>
             </div>
 
             <div class="mb-5">
@@ -398,7 +404,7 @@
         <div class="copy">
             &copy; <span id="ano-copy"></span> - Praça Sete | Carlos Giovano
         </br>
-        <span class="developer">Desenvolvido por Jandaia Software</span>
+        <span class="developer">Desenvolvido por <a href="https://www.jandaiadev.com.br/">Jandaia Software</a></span>
         </div>
     </footer>
 
